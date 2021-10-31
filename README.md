@@ -19,3 +19,5 @@ Entendimento da arquitetura do e-commerce com diagrama do nível 2, modelo C4 de
 9.	As instâncias dos bancos de dados recebem as requisições SQL, executam e as retornam. O armazenamento poderia ser RDS com MySQL;
 
 # Considerações
+- Caso não esteja visualizando as ligações dos itens e textos do diagrama, é por que eles estão na cor preta e o navegador pode estar com o tema dark;
+- 
