@@ -11,7 +11,7 @@ Entendimento da arquitetura do e-commerce com diagrama do nível 2, modelo C4 de
 
 # Fluxo de dados
 1.	O cliente acessa a parte pública do frontend, que poderia ser um site;
-2.	O frontend efetua requisições http de recursos estáticos como assets, imagens dos produtos, banners, JavaScript, folhas de estilo, etc. de uma CDN, que poderia ser o CloudFront;
+2.	O frontend efetua requisições http de recursos estáticos como assets, imagens dos produtos, banners, JavaScript, folhas de estilo, entre outros. de uma CDN, que poderia ser o CloudFront;
 3.	A CDN efetua pull de recursos da origem, que poderia ser um S3;
 4.	O frontend efetua requisições http de informações do produto para o backend, que poderia ser á página do produto, informações como descrição, preço, entre outros;
 5.	O backend recebe as requisições no load balancer, ele distribui o tráfego de entrada em vários destinos na camada de cache. O load balancer poderia ser um Elastic Load Balancing;
