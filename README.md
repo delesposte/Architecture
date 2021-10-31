@@ -3,7 +3,7 @@
 Ao acessar a página de produtos de um e-commerce podem acontecer inúmeras coisas, não sendo possível uma reposta sem antes conhecer as restrições do negócio, os requisitos de qualidade, o público alvo, entre outras variáveis. No entanto, vamos descrever possíveis cenários, como: eventos, arquitetura, tecnologias, entre outros.
 
 # Diagrama 
-Diagrama do nível 2 do modelo C4 de documentação para arquitetura de software para compor o entendimento da arquitetura do e-commerce.
+Diagrama do nível 2, modelo C4 de documentação para arquitetura de software, para entendimento da arquitetura do e-commerce.
 
 ![alt text](https://github.com/delesposte/SoftwareArchitecture/blob/main/e-commerce.drawio.png?raw=true)
 
