@@ -9,14 +9,14 @@ Entendimento da arquitetura do e-commerce com diagrama do nível 2, modelo C4 de
 
 # Fluxo de dados
 1.	O cliente acessa a parte pública do frontend, que poderia ser um site;
-2.	O frontend efetua requisições http de recursos estáticos como assets, imagens dos produtos, banners, JavaScript e folhas de estilo de um CDN, que poderia ser o CloudFront;
+2.	O frontend efetua requisições http de recursos estáticos como assets, imagens dos produtos, banners, JavaScript, folhas de estilo, etc. de uma CDN, que poderia ser o CloudFront;
 3.	A CDN efetua pull de recursos da origem, que poderia ser um S3;
 4.	O frontend efetua requisições http de informações do produto para o backend, que poderia ser á página do produto, informações como descrição, preço, entre outros;
-5.	O backend recebe as requisições no load balancer, que distribui o tráfego de entrada em vários destinos na camada de cache. O load balancer poderia ser um Elastic Load Balancing;
-6.	Os servidores de cache recebem as requisições e verificam se os dados solicitados existem no cache e se ainda são válidos. Caso sim, retornam os dados. Caso contrário, a requisição é direcionada para um segundo load balancer. O cache poderia ser EC2 com instâncias da família R, otimizadas para memória e ElastiCache  com banco de dado em memória Redis;
+5.	O backend recebe as requisições no load balancer, ele distribui o tráfego de entrada em vários destinos na camada de cache. O load balancer poderia ser um Elastic Load Balancing;
+6.	Os servidores de cache recebem as requisições e verificam se os dados solicitados existem no cache e se ainda são válidos. Caso sim, retornam os dados. Caso contrário, as requisições são direcionadas para um segundo load balancer. O cache poderia ser EC2 com instâncias da família R, otimizadas para memória e ElastiCache  com banco de dado em memória Redis;
 7.	O segundo load balancer distribui o tráfego de entrada em vários destinos na camada de aplicação. O load balancer poderia ser um Elastic Load Balancing;
 8.	Os servidores de aplicação recebem as requisições e buscam os dados no banco de dados. A camada de aplicação poderia ser EC2 com instâncias da família C4, otimizadas para computação;
-9.	As instâncias dos bancos de dados recebem as instruções SQL, executam e as retornam. O armazenamento poderia ser RDS com MySQL;
+9.	As instâncias dos bancos de dados recebem os comandos, executam e retornam dados. O armazenamento poderia ser RDS com MySQL;
 
 # Consideração
-- Caso não esteja visualizando as ligações dos itens e textos do diagrama, é por que eles estão na cor preta e o navegador pode estar com o tema dark.
+- Caso não esteja visualizando as ligações dos itens e textos do diagrama, pode ser por que eles estão na cor preta e o navegador está com o tema dark.
