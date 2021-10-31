@@ -1,6 +1,8 @@
 # Arquitetura comum E-Commerce
 
-Ao acessar a página de produtos de um e-commerce podem acontecer inúmeras coisas, não sendo possível uma reposta sem antes conhecer as restrições do negócio, os requisitos de qualidade, o público alvo, entre outras variáveis. No entanto, vamos descrever possíveis cenários, como: eventos, arquitetura, tecnologias, entre outros.
+A proposta do modelo é descrever o que aconteceria ao acessar a página de um produto de algum e-commerce.
+
+Sabemos que ao acessar a página de produtos de um e-commerce podem acontecer inúmeras coisas, não sendo possível uma reposta sem antes conhecer as restrições do negócio, os requisitos de qualidade, o público alvo, entre outras variáveis. No entanto, vamos descrever possíveis cenários, como: eventos, arquitetura, tecnologias, entre outros.
 
 # Diagrama 
 Entendimento da arquitetura do e-commerce com diagrama do nível 2, modelo C4 de documentação para arquitetura de software.
