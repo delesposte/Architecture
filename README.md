@@ -16,8 +16,7 @@ Entendimento da arquitetura do e-commerce com diagrama do nível 2, modelo C4 de
 6.	Os servidores de cache recebem as requisições e verificam se os dados solicitados existem no cache e se ainda são válidos. Caso sim, retornam os dados. Caso contrário, a requisição é direcionada para um segundo load balancer. O cache poderia ser EC2 com instâncias da família R, otimizadas para memória e ElastiCache  com banco de dado em memória Redis;
 7.	O segundo load balancer distribui o tráfego de entrada em vários destinos na camada de aplicação. O load balancer poderia ser um Elastic Load Balancing;
 8.	Os servidores de aplicação recebem as requisições e buscam os dados no banco de dados. A camada de aplicação poderia ser EC2 com instâncias da família C4, otimizadas para computação;
-9.	As instâncias dos bancos de dados recebem as requisições SQL, executam e as retornam. O armazenamento poderia ser RDS com MySQL;
+9.	As instâncias dos bancos de dados recebem as instruções SQL, executam e as retornam. O armazenamento poderia ser RDS com MySQL;
 
-# Considerações
-- Caso não esteja visualizando as ligações dos itens e textos do diagrama, é por que eles estão na cor preta e o navegador pode estar com o tema dark;
-- 
+# Consideração
+- Caso não esteja visualizando as ligações dos itens e textos do diagrama, é por que eles estão na cor preta e o navegador pode estar com o tema dark.
