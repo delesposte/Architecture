@@ -1,4 +1,4 @@
-# Arquitetura comum E-Commerce
+# Arquitetura comum para E-Commerce
 
 A proposta do modelo é descrever o que aconteceria ao acessar a página de um produto de algum e-commerce.
 
