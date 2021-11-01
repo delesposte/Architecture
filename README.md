@@ -20,5 +20,8 @@ Entendimento da arquitetura do e-commerce com diagrama do nível 2, modelo C4 de
 8.	Os servidores de aplicação recebem as requisições e buscam os dados no banco de dados. A camada de aplicação poderia ser EC2 com instâncias da família C4, otimizadas para computação;
 9.	As instâncias dos bancos de dados recebem os comandos, executam e retornam dados. O armazenamento poderia ser RDS com MySQL;
 
+# Processo criativo
+Inicialmente foi realizado o levantamento dos requisitos e o entendimento do problema. Com dados em mãos, o próximo momento foi de refletir sobre os possíveis cenários e suas restrições. Com uma idéia do que seria criado, foi hora de pesquisar soluções disponíveis no mercado. A última etapa foi compilação de todas as fases do processo criativo que resultou na elaboração da documentação, começando pelo diagrama, em seguida o fluxo de dados e os demais itens.
+
 # Consideração
 - Caso não esteja visualizando as ligações dos itens e textos do diagrama, pode ser por que eles estão na cor preta e o navegador está com o tema dark.
